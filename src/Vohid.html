@@ -17,19 +17,19 @@
             <div>
                 <img src="./image_by_vohid/Logo.svg" alt="">
             </div>
-            <div class="flex gap-10">
-                <a class="text-2xl hover:text-blue-400" href="#">Home</a>
-                <a class="text-2xl hover:text-blue-400" href="#">Services</a>
-                <a class="text-2xl hover:text-blue-400" href="#">Portfolio</a>
+            <div class="flex gap-10 hidden lg:flex">
+                <a class="text-2xl hover:text-blue-400" href="index.html">Home</a>
+                <a class="text-2xl hover:text-blue-400" href="../Muhammadtm.html">Services</a>
+                <a class="text-2xl hover:text-blue-400" href=".">Portfolio</a>
                 <a class="text-2xl text-blue-400" href="#">About Us</a>
-                <a class="text-2xl hover:text-blue-400" href="#">Careers</a>
+                <a class="text-2xl hover:text-blue-400" href="../Abdullo.html">Careers</a>
 
             </div>
-            <button class="px-10 py-3 bg-blue-500 rounded-2xl hover:cursor-pointer hover:bg-white hover:text-black"><a
-                    href="">Contact
+            <button class="px-10 hidden lg:flex py-3 bg-blue-500 rounded-2xl hover:cursor-pointer hover:bg-white hover:text-black"><a
+                    href="./Contact us.html">Contact
                     Us</a></button>
         </nav>
-        <div class="min-h-[376px] mt-20 bg-[#141414] rounded-3xl flex"
+        <div class="min-h-[376px] mt-20 bg-[#141414] rounded-3xl flex flex-col lg:flex-row"
             style="background-image: url(./image_by_vohid/Group\ 24.svg);">
             <div class="min-h-[376px] p-20"
                 style="background-image: url(./image_by_vohid/Group\ 27.svg);background-repeat: no-repeat;">
@@ -45,7 +45,7 @@
                 <img src="./image_by_vohid/calogo1 2.svg" alt="">
             </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-5 place-items-center mt-10">
+        <div class="grid grid-cols-2 lg:grid-cols-5 place-items-center gap-10 mt-10"> 
             <div class="uppercase bg-[#1A1A1A] p-12 rounded-4x1 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p>Clients</p>
                 <p class="text-5xl">200+</p>
@@ -62,14 +62,14 @@
                 <p>FOLLOWER</p>
                 <p class="text-5xl">420K</p>
             </div>
-            <div class="uppercase bg-[#1A1A1A] p-12 rounded-4x1 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <div class="col-span-2 lg:col-span-1 uppercase bg-[#1A1A1A] p-12 rounded-4x1 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-[12px]">Years Of Experience</p>
                 <p class="text-5xl">10+</p>
             </div>
         </div>
     </header>
     <section class="mt-20 p-20" style="background-image: url(./image_by_vohid/Group\ 24.svg); ">
-        <div class="max-w-[1200px] m-auto flex justify-between items-center">
+        <div class="max-w-[1200px] m-auto flex justify-between items-center flex-col gap-10 lg:flex-row">
 
             <div class="">
                 <p class="font-bold text-2xl font-extrabold">Our Story</p><br>
@@ -86,10 +86,10 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div>
-                <img src="./image_by_vohid/Rectangle 33.svg" alt="">
+                <img class="w-full" src="./image_by_vohid/Rectangle 33.svg" alt="">
             </div>
         </div><br><br><br>
-        <div class="max-w-[1200px] m-auto flex justify-between items-center">
+        <div class="max-w-[1200px] m-auto flex justify-between items-center flex-col-reverse lg:flex-row gap-10">
             <div>
                 <img src="./image_by_vohid/Rectangle 34.svg" alt="">
             </div>
@@ -113,7 +113,7 @@
     </section>
     <section class="max-w-[1200px] m-auto mt-30">
         <p class="text-6xl text-center m-20">Core Expertise</p>
-        <div class="flex text-start items-center gap-5">
+        <div class="flex text-start items-center gap-5 flex-col lg:flex-row">
             <div class="bg-[#1A1A1A] w-[306px] rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-[#81807E] m-5">AI & Machine Learning</p><br>
                 <div class="bg-[#1F1F1F] flex p-10 ">
@@ -150,107 +150,159 @@
 
     </section>
     <section class="max-w-[1200px] m-auto mt-30">
-        <p class="text-6xl text-center m-20">Our Track Record</p>
-        <div class="grid grid-cols-4 gap-5 text-center ">
+        <p class="text-6xl text-center p-10">Our Track Record</p>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 text-center ">
             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">12+</p><br>
                 <p class="font-bold ">Years AI & ML Development</p><br>
                 <p>Building and deploying production-grade ML systems and AI solutions</p>
             </div>
-             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">$2B+</p><br>
                 <p class="font-bold ">Trading Volume Tested</p><br>
                 <p>Through our battle-tested algorithmic trading systems</p>
             </div>
-             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">100+</p><br>
                 <p class="font-bold ">Blockchain Projects Audited</p><br>
                 <p>Including DeFi protocols and smart contracts</p>
             </div>
-             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">25+</p><br>
                 <p class="font-bold ">Esports Teams Audited</p><br>
                 <p>With data-driven performance optimization</p>
             </div>
         </div>
-        
+
 
     </section>
-     <section class="max-w-[1200px] m-auto mt-30">
+    <section class="max-w-[1200px] m-auto mt-30">
         <p class="text-6xl text-center m-20">Operational Impact</p>
-        <div class="grid grid-cols-4 gap-5 text-center ">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 text-center ">
             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">99.99%</p><br>
                 <p class="font-bold ">System Uptime</p><br>
                 <p>For critical ML and trading infrastructure</p>
             </div>
-             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">60%</p><br>
                 <p class="font-bold ">Cost Reduction</p><br>
                 <p>Average operational cost savings for clients</p>
             </div>
-             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">85%</p><br>
                 <p class="font-bold ">Automation Rate</p><br>
                 <p>In client workflow optimization</p>
             </div>
-             <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <div class="bg-[#141414] p-10 rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <p class="text-5xl font-extrabold">3x</p><br>
                 <p class="font-bold ">Performance Gain</p><br>
                 <p>Average improvement in system efficiency</p>
             </div>
         </div>
-        
+
 
     </section>
     <section class="bg-black text-white py-20 overflow-hidden">
-  <div class="max-w-[1200px] mx-auto px-4 text-center">
-    <h2 class="text-2xl lg:text-5xl font-extrabold mb-16">Our Value</h2>
+        <div class="max-w-[1200px] mx-auto px-4 text-center">
+            <h2 class="text-2xl lg:text-5xl font-extrabold mb-16">Our Value</h2>
 
-    <div class="flex flex-col lg:flex-row items-center justify-center">
-      
-      <div class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] lg:-mr-20 z-10">
-        <div class="w-10 h-10 rounded-full ">
-            <img src="./image_by_vohid/quality-icon 1.svg" alt="">
+            <div class="flex flex-col lg:flex-row items-center justify-center">
+
+                <div
+                    class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] lg:-mr-20 z-10">
+                    <div class="w-10 h-10 rounded-full ">
+                        <img src="./image_by_vohid/quality-icon 1.svg" alt="">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Innovation</h3>
+                    <p class="text-sm text-gray-400 text-center">Pushing boundaries in AI, blockchain, and quantitative
+                        trading to deliver cutting-edge solutions.</p>
+                </div>
+
+                <div
+                    class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] lg:-mr-20 z-20">
+                    <div class="w-10 h-10 rounded-full ">
+                        <img src="./image_by_vohid/quality-icon 1.svg" alt="">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Collaboration</h3>
+                    <p class="text-sm text-gray-400 text-center">Working closely with clients to develop tailored
+                        solutions that drive measurable success.</p>
+                </div>
+
+                <div
+                    class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] lg:-mr-20 z-30">
+                    <div class="w-10 h-10 rounded-full ">
+                        <img src="./image_by_vohid/quality-icon 1.svg" alt="">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Excellence</h3>
+                    <p class="text-sm text-gray-400 text-center">Maintaining the highest standards in code quality,
+                        system performance, and client outcomes.</p>
+                </div>
+
+                <div
+                    class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] z-40">
+                    <div class="w-10 h-10 rounded-full ">
+                        <img src="./image_by_vohid/quality-icon 1.svg" alt="">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Integrity</h3>
+                    <p class="text-sm text-gray-400 text-center">Operating with transparency and ethical considerations
+                        at the forefront of all decisions.</p>
+                </div>
+
+            </div>
         </div>
-        <h3 class="text-lg font-semibold mb-2">Innovation</h3>
-        <p class="text-sm text-gray-400 text-center">Pushing boundaries in AI, blockchain, and quantitative trading to deliver cutting-edge solutions.</p>
-      </div>
-
-      <div class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] lg:-mr-20 z-20">
-        <div class="w-10 h-10 rounded-full ">
-            <img src="./image_by_vohid/quality-icon 1.svg" alt="">
+    </section>
+    <section
+        class="max-w-[1200px] m-auto min-h-[282px] mt-30  rounded-4xl p-10 shadow-[20px_20px_40px_rgba(255,255,255,0.4)]"
+        style="background-image: url(./image_by_vohid/fc9a47396a5036fc47f50e8b57d87e02b66e2885.png); background-repeat: no-repeat;">
+        <div class="flex flex-col justify-center items-center ">
+            <p class="text-5xl uppercase">Ready to discuss</p><br>
+            <p class="uppercase">your product needs with <span class="text-[#0A84FF]"> Catalyst Analytic </span>
+                experts?</p><br><br><br>
+            <button class="bg-blue-500 px-14 py-3 rounded-3xl hover:bg-white hover:text-black">Get In Touch</button>
         </div>
-        <h3 class="text-lg font-semibold mb-2">Collaboration</h3>
-        <p class="text-sm text-gray-400 text-center">Working closely with clients to develop tailored solutions that drive measurable success.</p>
-      </div>
+    </section>
+    <footer class="border-solid border-t-1 mt-20">
+        <nav class="flex items-center justify-around p-10 mt-15 flex-col lg:flex-row gap-10 ">
+            <div>
+                <img src="./image_by_vohid/Logo.svg" alt="">
+            </div>
+            <div class="flex gap-10 hidden lg:flex">
+                <a class="text-2xl hover:text-blue-400" href="#">Home</a>
+                <a class="text-2xl hover:text-blue-400" href="#">Services</a>
+                <a class="text-2xl hover:text-blue-400" href="#">Portfolio</a>
+                <a class="text-2xl  hover:text-blue-400" href="#">About Us</a>
+                <a class="text-2xl hover:text-blue-400" href="#">Careers</a>
 
-      <div class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] lg:-mr-20 z-30">
-        <div class="w-10 h-10 rounded-full ">
-            <img src="./image_by_vohid/quality-icon 1.svg" alt="">
-        </div>
-        <h3 class="text-lg font-semibold mb-2">Excellence</h3>
-        <p class="text-sm text-gray-400 text-center">Maintaining the highest standards in code quality, system performance, and client outcomes.</p>
-      </div>
-
-      <div class="relative bg-[#111] rounded-full w-[260px] h-[260px] flex flex-col items-center justify-center p-6 shadow-[0_0_60px_rgba(0,0,0,0.8)] z-40">
-         <div class="w-10 h-10 rounded-full ">
-            <img src="./image_by_vohid/quality-icon 1.svg" alt="">
-        </div>
-        <h3 class="text-lg font-semibold mb-2">Integrity</h3>
-        <p class="text-sm text-gray-400 text-center">Operating with transparency and ethical considerations at the forefront of all decisions.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section class="max-w-[1200px] m-auto min-h-[282px] mt-30  rounded-4xl p-10 shadow-[20px_20px_40px_rgba(255,255,255,0.4)]" style="background-image: url(./image_by_vohid/fc9a47396a5036fc47f50e8b57d87e02b66e2885.png); background-repeat: no-repeat;">
-             <div class="flex flex-col justify-center items-center ">
-                <p class="text-5xl uppercase">Ready to discuss</p><br>
-                <p class="uppercase">your product needs with <span class="text-[#0A84FF]"> Catalyst Analytic </span> experts?</p><br><br><br>
-                <button class="bg-blue-500 px-14 py-3 rounded-3xl hover:bg-white hover:text-black">Get In Touch</button>
-             </div>
-</section>
+            </div>
+            <div class="flex gap-3 border-solid border-[#262626] border-1 p-10">
+                <img class="w-full hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]" src="./image_by_vohid/Button (1).svg" alt="">
+                <img class="w-full hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]" src="./image_by_vohid/Button (2).svg" alt="">
+                <img class="w-full hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]" src="./image_by_vohid/Button.svg" alt="">
+            </div>
+        </nav><br><br>
+        <div class="flex justify-around flex-col lg:flex-row">
+            <div class="flex gap-10 flex-col lg:flex-row">
+                <div class="flex gap-2">
+                    <img src="./image_by_vohid/Icon.svg" alt="">
+                    <p>contact@catalystanalytics.io</p>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./image_by_vohid/Icon (1).svg" alt="">
+                    <p>+1 (469) 712-4672o</p>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./image_by_vohid/Icon (2).svg" alt="">
+                    <p>5511 Parkcrest Dr, Suite 103, Austin, TX 78731</p>
+                </div>
+            </div>
+            <div class="text-[#98989A] flex gap-5">
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </div><br><br>
+        <p class="text-[#98989A] text-center m-10">© 2025 Catalyst Analytics. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
