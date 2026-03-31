@@ -6,6 +6,7 @@
 <title>Document</title>
 <link rel="stylesheet" href="./src/output.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -30,7 +31,7 @@
 
 
             <p class="lg:hidden text-white font-semibold">Home</p>
-            <button class="flex bg-[#0A84FF] text-white py-2 px-6 hidden lg:flex">Contact Us</button>
+            <button class="flex bg-[#0A84FF] text-white py-2 px-6 hidden lg:flex lg:hover:bg-[#0975e1]">Contact Us</button>
         </nav>
     </header>
 
@@ -822,8 +823,8 @@
                         </div>
                          <div
                             class="lg:flex lg:items-center lg:gap-4 lg:border lg:border-[#459CF3] lg:rounded-[30px] lg:py-2 lg:px-4
-                            flex items-center gap-4 border border-[#459CF3] rounded-[30px] py-2 px-4 ">
-                            <img class="lg:bg-[#459CF3]  lg:py-3 lg:px-5 lg:rounded-[20px]
+                            flex items-center gap-4 border border-[#459CF3] rounded-[30px] py-2 px-4  ">
+                            <img class="lg:bg-[#459CF3]  lg:py-3 lg:px-5 lg:rounded-[20px] 
                             bg-[#459CF3]  py-3 px-5 rounded-[20px]"
                                 src="./src/myimg1/Vector (Stroke).png" alt="">
                             <p class="lg:font-extralight">Book a Call</p>
@@ -857,18 +858,18 @@
     
      <div class="lg:flex lg:items-center lg:gap-10 lg:text-white
       text-white font-semibold lg:pb-0 pb-10 lg:pt-0 pt-5">
-    <p>Home</p>
-    <p>Services</p>
-    <p>Portfolio</p>
-    <p>About Us</p>
-    <p>Careers</p>
+    <p class="hover:lg:text-[#4545d9e2]">Home</p>
+    <p class="hover:lg:text-[#4545d9e2]">Services</p>
+    <p class="hover:lg:text-[#4545d9e2]">Portfolio</p>
+    <p class="hover:lg:text-[#4545d9e2]">About Us</p>
+    <p class="hover:lg:text-[#4545d9e2]">Careers</p>
     
     </div>
     
     <div class="lg:flex lg:items-center lg:gap-2 hidden ">
-        <img src="./src/myimg1/Button.png" alt="">
-        <img src="./src/myimg1/Button (1).png" alt="">
-             <img src="./src/myimg1/Button (2).png" alt="">
+        <img class="transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-xl" src="./src/myimg1/Button.png" alt="">
+        <img class="transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-xl" src="./src/myimg1/Button (1).png" alt="">
+             <img class="transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-xl" src="./src/myimg1/Button (2).png" alt="">
     </div>
     
 </div>
@@ -897,6 +898,54 @@
 </div>
     </footer>
 
+    <script>
+  window.addEventListener('load', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('animate-fade-up');
+          
+            entry.target.classList.remove('opacity-0', 'translate-y-12');
+          }, index * 100); 
+          
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+
+    const cards = document.querySelectorAll('.lg\\:bg-\\[\\#141414\\], .bg-\\[\\#141414\\]');
+    
+    console.log('Найдено карточек:', cards.length);
+
+    cards.forEach(card => {
+      card.classList.add('opacity-0', 'translate-y-12', 'transition-all', 'duration-700');
+      observer.observe(card);
+    });
+  });
+</script>
+
+
+<style>
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out forwards;
+  }
+</style>
 </body>
 
 </html>
